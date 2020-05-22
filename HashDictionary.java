@@ -185,7 +185,6 @@ public class HashDictionary {
                 temp[id] = keys[i];            
             }
         }
-        System.out.println("rehashed"); 
         
         //Substitute the old HashTable with the new HashTable
         keys = temp;
