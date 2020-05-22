@@ -1,12 +1,5 @@
 package hashdictionary;
 
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
  *
  * @author Che-Wei Chou
@@ -24,7 +17,6 @@ public class LinkedList<E extends IDedObject> {
      * @param n the item to be added
      */
     public void addFirst(E n) {
-        //I actually don't know how this line works but it works
         Node<E> item = new Node<>(n);
         //If list is empty, then set the item to be the first item of the list.
         if (head == null) {
@@ -160,7 +152,6 @@ public class LinkedList<E extends IDedObject> {
      * @return the deleted item. Null if item is not in the list.
      */
     public IDedObject deleteSearch(int id) {
-        //I don't know how to explain but it's okay I know you understand
         IDedObject obj = null;
 
         Node current = head;
@@ -223,9 +214,6 @@ public class LinkedList<E extends IDedObject> {
             result += current.toString() + "\n";
             current = current.getNext();
         }
-        /*if (result.length() > 0) {
-            result = result.substring(0, result.length() - 1);
-        }*/
         return result;
     }
 
