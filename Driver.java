@@ -6,7 +6,9 @@ import java.util.List;
 import java.util.Scanner;
 import static java.lang.System.*;
 
-//TODO: add your imports here
+/*
+ * Author: Che-Wei (Joanne) Chou
+ */
 
 public class Driver {
     
@@ -22,13 +24,13 @@ public class Driver {
 	    exit(1);
 	}
 	// hash table to store words and meanings
-	HashDictionary dict = new HashDictionary(); // TODO: write this class
+	HashDictionary dict = new HashDictionary();
 	List<String> line;			    // the current line
 	// load the dictionary into RAM
 	out.print("Loading Dictionary...");
 	while(inDict.hasNextLine()){
 	    line = parseLine(inDict.nextLine());
-	    dict.newDef(line.get(0).toLowerCase(), // word 	    // TODO: write this method
+	    dict.newDef(line.get(0).toLowerCase(), // word 	   
 			line.get(1), // part of speech (verb, noun, adverb...)
 			line.get(2)); // meaning
 	}
@@ -44,9 +46,9 @@ public class Driver {
 	    String[] defs =  dict.getDefs(wrd.toLowerCase()); // get definitons for wrd
 	    if(defs != null){				      // if wrd is a word, give defintions
 		out.println(wrd+":\n");
-		//TODO: print definitions with definition number part of speech and definitons
-		// a single new line should separate each definiton
-		/* this format:
+		// print definitions with definition number part of speech and definitons
+		// a single new line separate each definiton
+		/* format:
 		   word\n
 		   1\t    partOfSpeech1 meaning1\n
 		   2\t    partOfSpeech2 meaning2\n
