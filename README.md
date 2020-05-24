@@ -8,4 +8,4 @@ Each definition is its own IDed object, and all the definitions are collectively
 
 The magazine database allow people to enter a word they want to search, and the program will either provide the user the definition or let the user know it is not a known word.*
 
-\*The dictionary.csv file does not seem very good and therefore a lot of words are actually missing from the file.
+\*The dictionary.csv file I found online is not very good and therefore a lot of words are actually missing from the file.
